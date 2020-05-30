@@ -1,0 +1,26 @@
+{
+  "name": "indexed-db-lite",
+  "version": "1.0.0",
+  "description": "A simple wrapper around the not-so-simple indexedDB. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akkiei/indexed-DB.git"
+  },
+  "keywords": [
+    "indexedDB",
+    "indexed",
+    "db",
+    "IDB",
+    "idb"
+  ],
+  "author": "akash deep shukla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akkiei/indexed-DB/issues"
+  },
+  "homepage": "https://github.com/akkiei/indexed-DB#readme"
+}
