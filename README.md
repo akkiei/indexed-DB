@@ -166,4 +166,8 @@ This is function deletes the entire indexedDB database.
 
 
 ## License
+<<<<<<< HEAD
 [MIT](https://choosealicense.com/licenses/mit/)
+=======
+[MIT](https://choosealicense.com/licenses/mit/)
+>>>>>>> 4fe60d5fd3be1d9f9c9f3dd8397f5c214f051ada

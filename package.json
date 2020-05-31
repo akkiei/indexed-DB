@@ -1,6 +1,6 @@
 {
   "name": "indexed-db-lite",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple wrapper around the not-so-simple indexedDB. ",
   "main": "index.js",
   "scripts": {
