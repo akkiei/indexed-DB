@@ -28,7 +28,7 @@ Some functions mentioned here return promise due to asynchronous nature of Index
 Hence, they should be called from async function with the await keyword or 
 can be resolved using .then() 
 
-```
+```javascript
 import IDB from 'indexed-db-lite';
 
 ReadObject = async (StoreName, primKey) => {
@@ -37,7 +37,7 @@ ReadObject = async (StoreName, primKey) => {
  }
 ```
 ## OR
-```
+```javascript
 import IDB from 'indexed-db-lite';
 
  IDB.ReadObjectStoreById( StoreName, primKey ).then(function(result){
