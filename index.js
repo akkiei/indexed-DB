@@ -23,6 +23,11 @@ exports.InitDB = function(dbName, version) {
 /* 
 	This function will be called to create store for new Location { school, phc etc}
 */
+/**
+ * @param  {} dbName
+ * @param  {} ObjectStoreName
+ * @param  {} isAutoIncrement=true
+ */
 exports.CreateObjectStore = function(dbName, ObjectStoreName, isAutoIncrement = true) {
 	const curVer = localStorage.getItem('dbVer');
 	return new Promise(function(resolve) {
@@ -106,7 +111,6 @@ exports.ReadObjectStoreById = function(ObjectStoreName, primaryKey) {
 
 /**
  * @param  {} ObjectStoreName
- * @param  {} locationcode
  */
 exports.ReadCompleteObjectStore = function(ObjectStoreName) {
 	return new Promise(function(resolve, reject) {
@@ -205,8 +209,9 @@ exports.KeyExists = function(ObjectStoreName, primaryKey) {
 
 /**
  * @param  {} ObjectStoreName
- * @param  {} appendObj
  * @param  {} primaryKey
+ * @param  {} appendObj
+ * @param  {} appendKey=''
  */
 exports.UpdateObjectStore = function(ObjectStoreName, primaryKey, appendObj, appendKey = '') {
 	const transaction = db.transaction(ObjectStoreName, 'readwrite');
@@ -276,7 +281,10 @@ exports.DeleteRow = function(ObjectStoreName, primaryKey) {
 		console.log(`deleted successfully ${e}`);
 	};
 };
-
+/**
+ * @param  {} dbName
+ * @param  {} ObjectStoreName
+ */
 exports.DeleteObjectStore = function(dbName, ObjectStoreName) {
 	const curVer = localStorage.getItem('dbVer');
 	return new Promise(function(resolve) {
@@ -298,7 +306,9 @@ exports.DeleteObjectStore = function(dbName, ObjectStoreName) {
 		};
 	});
 };
-
+/**
+ * @param  {} dbName
+ */
 exports.DeleteDB = function(dbName) {
 	return new Promise(function(resolve, reject) {
 		const DBDeleteRequest = dbObject.deleteDatabase(dbName);
