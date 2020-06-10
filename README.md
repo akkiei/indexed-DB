@@ -165,6 +165,6 @@ This is function deletes the entire indexedDB database.
 ##
 
 
-## License
- [MIT](https://choosealicense.com/licenses/mit/)
+Feel free to reach out to me :)
+akashdeepshukla007@gmail.com
    
